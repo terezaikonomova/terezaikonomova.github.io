@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">SoftUni Blog</a>
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-6">
+            <article>
+                <header>
+                    <h2>Why Choosing the Right Storage Infrastructure.</h2>
+                </header>
+
+                <p>
+                    Containers and “application portability”
+
+                    I was at DockerCon two weeks ago and haven’t seen any other technology in the recent past that has created as much excitement as containers and Docker in particular. There are many reasons to get excited about containers. Unlike VMs, containers are light weight, deliver better application density per server, start and stop rapidly in a few seconds and share same OS layer.
+
+                    Because containers wrap the entire application and associated dependencies, they enable workload portability. That is, an application running inside a container on a developer laptop can run seamlessly in a QA or production environment, and in the cloud. Application portability is one of the popular reasons for using containers in a DevOps environment.
+
+                    Originally, containers were mostly used by stateless applications such as load balancers, web servers, monitoring applications, etc. and data persistence didn’t matter. As increasingly stateful applications such as databases are containerized, data persistence becomes a key requirement. To enable container data persistence on HPE Storage (3PAR and StoreVirtual), we have a created a Native Docker Volume plugin to attach external volumes to containers. When the containers are migrated to different hosts by orchestration tools, the volume will automatically reattach to the container thus allowing persistent volumes to follow containers. Data is available to applications beyond the lifecycle of container itself. Also, when you have the container volume on a modern storage platform such as 3PAR you get enterprise grade capabilities such as 99.9999% data availability, data reduction capabilities and data services, etc. that you expect for containers in production.
+
+                    Like VM, container sprawl is expected. When several hundred or thousands of stateful containers are spun up rapidly, the IO load on Storage system can be enormous. The good news is that 3PAR is designed for unpredictable multi-tenant workloads and presents itself as a great platform for running containerized workloads.
+                </p>
+
+                <small class="author">
+                Unknown
+                </small>
+
+                <footer>
+                    <div class="pull-right">
+                        <a class="btn btn-default btn-xs" href="#">Read more &raquo;</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article>
+                <header>
+                    <h2>Why Choosing the Right Storage Infrastructure.</h2>
+                </header>
+
+                <p>
+                    Containers and “application portability”
+
+                    I was at DockerCon two weeks ago and haven’t seen any other technology in the recent past that has created as much excitement as containers and Docker in particular. There are many reasons to get excited about containers. Unlike VMs, containers are light weight, deliver better application density per server, start and stop rapidly in a few seconds and share same OS layer.
+
+                    Because containers wrap the entire application and associated dependencies, they enable workload portability. That is, an application running inside a container on a developer laptop can run seamlessly in a QA or production environment, and in the cloud. Application portability is one of the popular reasons for using containers in a DevOps environment.
+
+                    Originally, containers were mostly used by stateless applications such as load balancers, web servers, monitoring applications, etc. and data persistence didn’t matter. As increasingly stateful applications such as databases are containerized, data persistence becomes a key requirement. To enable container data persistence on HPE Storage (3PAR and StoreVirtual), we have a created a Native Docker Volume plugin to attach external volumes to containers. When the containers are migrated to different hosts by orchestration tools, the volume will automatically reattach to the container thus allowing persistent volumes to follow containers. Data is available to applications beyond the lifecycle of container itself. Also, when you have the container volume on a modern storage platform such as 3PAR you get enterprise grade capabilities such as 99.9999% data availability, data reduction capabilities and data services, etc. that you expect for containers in production.
+
+                    Like VM, container sprawl is expected. When several hundred or thousands of stateful containers are spun up rapidly, the IO load on Storage system can be enormous. The good news is that 3PAR is designed for unpredictable multi-tenant workloads and presents itself as a great platform for running containerized workloads.
+                </p>
+
+                <small class="author">
+                Unknown
+                </small>
+
+                <footer>
+                    <div class="pull-right">
+                        <a class="btn btn-default btn-xs" href="#">Read more &raquo;</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+<div class="container modal-footer">
+    <p>&copy; 2016 - Software University Foundation</p>
+</div>
+</footer>
+
+</body>
+</html>
